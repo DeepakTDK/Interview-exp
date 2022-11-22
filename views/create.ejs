@@ -1,0 +1,20 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/blogs" method="POST">
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company" required>
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role" required>
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
